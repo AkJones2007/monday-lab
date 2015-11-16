@@ -11,3 +11,11 @@ var api = {
   }
 
 };
+
+var getUser = function getUser(callback) {
+  api.ajax({
+    method: 'GET',
+    url: api.url + 'users',
+    dataType: 'json'
+  }, callback);
+}
