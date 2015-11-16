@@ -21,5 +21,6 @@ var getUsers = function getUsers(callback) {
 }
 
 var response = function response(error, data) {
-  handlebarsTemplate(data);
+  var newHTML = handlebarsTemplate({people: data});
+  $('#handlebars').html(newHTML);
 }
