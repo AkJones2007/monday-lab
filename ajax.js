@@ -12,10 +12,14 @@ var api = {
 
 };
 
-var getUser = function getUser(callback) {
+var getUsers = function getUsers(callback) {
   api.ajax({
     method: 'GET',
     url: api.url + 'users',
     dataType: 'json'
   }, callback);
+}
+
+var response = function response(error, data) {
+  handlebarsTemplate(data);
 }
