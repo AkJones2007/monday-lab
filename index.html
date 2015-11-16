@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+  <title> monday-lab </title>
+  <script type = "text/javascript" src = "click_hanlder.js"> </script>
+  <script type = "text/javascript" src = "ajax.js"> </script>
+  </head>
+
+<body>
+  <div class = "body" id = "body">
+
+  <button name="button" id = "show-Data">Click me</button>
+  </div>
+  <div id = "handlebars">
+    <script id = "data-list" type = "handlebars-template">
+      {{#each people}}
+        <ul>
+        <lh> {{name}}</lh>
+          <li> {{username}} </li>
+          <li> {{email}} </li>
+          <li> {{address}} </li>
+          <li> {{geo}} </li>
+          <li> {{phone}} </li>
+          <li> {{website}} </li>
+          <li> {{company}} </li>
+        </ul>
+        {{/each}}
+      </script>
+    </div>
+
+</body>
+
+</html>
+
